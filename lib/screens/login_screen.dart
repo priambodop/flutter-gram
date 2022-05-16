@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gram/utils/colors.dart';
+import 'package:flutter_gram/widgets/text_field_input.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -15,6 +16,11 @@ class LoginScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
+              Flexible(
+                child: Container(),
+                flex: 2,
+              ),
+
               // svg image
               SvgPicture.asset(
                 'assets/ic_instagram.svg',
@@ -25,6 +31,7 @@ class LoginScreen extends StatelessWidget {
                 height: 64,
               ),
               // text field for email
+
               // text field for password
               // button login
               // Tansitioning to sign up page
